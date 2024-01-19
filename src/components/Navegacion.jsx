@@ -3,20 +3,21 @@ import { logo } from "../assets";
 import "./Navegacion.css";
 
 const Navegacion = ({ searchValue, setSearchValue, search }) => {
-  const [anchoInputCity, setAnchoInputCity] = useState(50);
-  const [anchoInputGuests, setAnchoInputGuests] = useState(50);
+  const [anchoInputCity, setAnchoInputCity] = useState(100);
+  const [anchoInputGuests, setAnchoInputGuests] = useState(150);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const inputCityRef = useRef(null);
   const inputGuestsRef = useRef(null);
 
   const ampliarInputCity = () => {
     setAnchoInputCity(800);
-    setAnchoInputGuests(50);
+    setAnchoInputGuests(150);
   };
 
   const ampliarInputGuests = () => {
     setAnchoInputGuests(800);
-    setAnchoInputCity(50);
+    setAnchoInputCity(100);
   };
 
   const handleClickOutside = (event) => {
@@ -26,8 +27,8 @@ const Navegacion = ({ searchValue, setSearchValue, search }) => {
       inputGuestsRef.current &&
       !inputGuestsRef.current.contains(event.target)
     ) {
-      setAnchoInputCity(50);
-      setAnchoInputGuests(50);
+      setAnchoInputCity(100);
+      setAnchoInputGuests(150);
     }
   };
 
@@ -46,7 +47,7 @@ const Navegacion = ({ searchValue, setSearchValue, search }) => {
         <div className="mt-5 border-slate-300 border-2 rounded  ">
           <input
             type="text"
-            className="url_input_1 border-none border-r-8 "
+            className="url_input_1 border-none border-r-8  pl-2"
             placeholder="City"
             style={{ width: `${anchoInputCity}px`, transition: "width 0.5s" }}
             onClick={ampliarInputCity}
@@ -56,7 +57,7 @@ const Navegacion = ({ searchValue, setSearchValue, search }) => {
           />
           <input
             type="text"
-            className="url_input border-none "
+            className="url_input border-none pl-2"
             placeholder="Add guests"
             style={{ width: `${anchoInputGuests}px`, transition: "width 0.5s" }}
             onClick={ampliarInputGuests}

@@ -5,7 +5,7 @@
 /* Tailwind Styles */
 
 .app {
-  @apply relative z-10 flex justify-center items-center flex-col  mx-auto sm:px-16;
+  @apply relative z-10 flex justify-center  flex-col  mx-auto sm:px-16;
 }
 
 .black_btn {
@@ -13,8 +13,8 @@
 }
 
 .url_input_1 {
-  @apply inline w-40 rounded-l-lg border border-gray-200 bg-white py-1.5 pl-10 pr-12 text-sm shadow-lg /*font-satoshi*/ font-medium focus:border-black focus:outline-none focus:ring-0;
+  @apply w-48    bg-white py-2   text-sm shadow-lg;
 }
 .url_input {
-  @apply inline w-40 border border-gray-200 bg-white py-1.5 pl-10 pr-12 text-sm shadow-lg /*font-satoshi*/ font-medium focus:border-black focus:outline-none focus:ring-0;
+  @apply w-40   bg-white py-2   text-sm shadow-lg;
 }
