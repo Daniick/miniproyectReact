@@ -5,7 +5,7 @@ const Cuerpo = () => {
   return (
     <ul className="w-full h-9 max-x-xl ">
       <div className="flex flex-row justify-between ">
-        <p className="text-4xl font-bold ">Stays in Finland</p>
+        <p className="text-4xl font-bold parra">Stays in Finland</p>
         <span>+12 stays</span>
       </div>
     </ul>

@@ -32,8 +32,13 @@ div img {
   transition: transform 0.3s ease;
 }
 
-/* @media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
   section {
-    margin-top: ;
+    margin-top: 50px;
   }
-} */
+  .mid {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+}

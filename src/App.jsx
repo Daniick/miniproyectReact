@@ -6,7 +6,7 @@ import Imagenes from "./components/Imagenes/Imagenes";
 const App = () => {
   return (
     <main>
-      <div className="app">
+      <div className="">
         <Imagenes />
       </div>
     </main>

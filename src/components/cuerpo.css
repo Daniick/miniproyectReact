@@ -1,4 +1,10 @@
 @media screen and (max-width: 640px) {
-  div > p {
+  div > .parra {
+    font-size: 28px;
+  }
+  @media screen and (max-width: 350px) {
+    div > .parra {
+      font-size: 18px;
+    }
   }
 }

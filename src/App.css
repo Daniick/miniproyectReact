@@ -4,17 +4,13 @@
 
 /* Tailwind Styles */
 
-.app {
-  @apply relative z-10 flex justify-center  flex-col  mx-auto sm:px-16;
-}
-
 .black_btn {
-  @apply rounded-r-lg border border-gray-200 bg-white py-1.5 px-5 text-sm text-white   text-orange-500;
+  @apply rounded-r-lg border border-gray-200  bg-white py-1.5 px-5 text-sm text-white   text-orange-500;
 }
 
 .url_input_1 {
-  @apply w-48    bg-white py-2   text-sm shadow-lg;
+  @apply w-28    bg-white py-2   text-sm shadow-lg;
 }
 .url_input {
-  @apply w-40   bg-white py-2   text-sm shadow-lg;
+  @apply w-28   bg-white py-2   text-sm shadow-lg;
 }
